@@ -1,0 +1,74 @@
+index.html:
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamento de Helena e Luana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="title">Casamento das Noivas Helena e Luana</div>
+
+    <div class="countdown-wrapper">
+        <h2>Contagem Regressiva</h2>
+        <div class="countdown-container" id="countdown">
+            <div class="countdown-box" id="days">00<br><small>Dias</small></div>
+            <div class="countdown-box" id="hours">00<br><small>Horas</small></div>
+            <div class="countdown-box" id="minutes">00<br><small>Minutos</small></div>
+            <div class="countdown-box" id="seconds">00<br><small>Segundos</small></div>
+        </div>
+    </div>
+
+    <h2>Escolha um presente simbólico 🎁</h2>
+    <div class="gifts-container" id="gifts-container">
+        <div class="gift-box" onclick="showPix('pix1@casamento.com')">
+            <img src="https://via.placeholder.com/100" alt="Abraço">
+            <p>Um abraço nas noivas - R$10</p>
+        </div>
+        <div class="gift-box" onclick="showPix('pix2@casamento.com')">
+            <img src="https://via.placeholder.com/100" alt="Visto">
+            <p>Pague pelo nosso visto - R$500</p>
+        </div>
+        <div class="gift-box" onclick="showPix('pix3@casamento.com')">
+            <img src="https://via.placeholder.com/100" alt="Vinho">
+            <p>Uma garrafa de vinho - R$100</p>
+        </div>
+        <div class="gift-box" onclick="showPix('pix4@casamento.com')">
+            <img src="https://via.placeholder.com/100" alt="Viagem">
+            <p>Ajude na viagem dos sonhos - R$1000</p>
+        </div>
+        <div class="gift-box" onclick="showPix('pix5@casamento.com')">
+            <img src="https://via.placeholder.com/100" alt="Passagem">
+            <p>Passagem de avião - R$1500</p>
+        </div>
+        <div class="gift-box" onclick="showPix('pix6@casamento.com')">
+            <img src="https://via.placeholder.com/100" alt="Bratwurst">
+            <p>Compre uma bratwurst - R$30</p>
+        </div>
+        <div class="gift-box" onclick="showPix('pix7@casamento.com')">
+            <img src="https://via.placeholder.com/100" alt="Chucrute">
+            <p>Um chucrute - R$25</p>
+        </div>
+        <div class="gift-box" onclick="showPix('pix8@casamento.com')">
+            <img src="https://via.placeholder.com/100" alt="Prato Norueguês">
+            <p>Um prato norueguês mal temperado - R$50</p>
+        </div>
+        <div class="gift-box" onclick="showPix('pix8@casamento.com')">
+            <img src="https://via.placeholder.com/100" alt="Prato Norueguês">
+            <p>Um prato norueguês mal temperado - R$50</p>
+        </div>
+    </div>
+    <p id="pix-display" class="pix-text"></p>
+
+    <h2>Local da Cerimônia 📍</h2>
+    <div id="map"></div>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/71/88/b7/restaurante.jpg" width="300" alt="Chez Margot">
+    <p>📍 Rua Buenos Aires, 50 - Batel, Curitiba - PR</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

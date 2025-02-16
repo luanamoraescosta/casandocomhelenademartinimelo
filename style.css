@@ -1,0 +1,73 @@
+body {
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    color: #B60000;
+    background-color: #fff5f5;
+}
+.title {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+.countdown-wrapper {
+    background: #B60000;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    margin: 20px auto;
+    display: inline-block;
+}
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.countdown-box {
+    font-size: 1.5rem;
+    background: white;
+    color: #B60000;
+    padding: 10px;
+    border: 2px solid #B60000;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+}
+.gifts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 presentes por linha */
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow-y: auto;
+    max-height: 200px;
+}
+.gift-box {
+    border: 2px solid #B60000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    width: 200px;
+    cursor: pointer;
+}
+.pix-text {
+    color: #B60000;
+    font-size: 1.2rem;
+}
+#map {
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    border: 2px solid #B60000;
+    border-radius: 10px;
+}
+#show-more {
+    background: #B60000;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
