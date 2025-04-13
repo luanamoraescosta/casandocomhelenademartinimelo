@@ -1,73 +1,103 @@
-body {
-    font-family: 'Times New Roman', serif;
-    text-align: center;
-    color: #B60000;
-    background-color: #fff5f5;
+/* Estilos Gerais */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.title {
-    font-size: 2.5rem;
+
+body, html {
+    font-family: 'Cinzel', serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.names {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.slide header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.content {
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+address {
+    font-style: normal;
     margin-top: 20px;
 }
-.countdown-wrapper {
-    background: #B60000;
-    padding: 20px;
-    border-radius: 15px;
-    color: white;
-    margin: 20px auto;
-    display: inline-block;
+
+/* Slide 2: Fundo Azul */
+.blue-background {
+    background-color: #003366;
+    color: #fff;
 }
-.countdown-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+
+.blue-background p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
-.countdown-box {
-    font-size: 1.5rem;
-    background: white;
-    color: #B60000;
-    padding: 10px;
-    border: 2px solid #B60000;
-    border-radius: 10px;
-    width: 80px;
-    text-align: center;
+
+/* Ordem do Dia */
+.schedule {
+    list-style-type: none;
+    padding: 0;
 }
+
+.schedule li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Presentes Simbólicos */
 .gifts-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 presentes por linha */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-    justify-content: center;
-    max-width: 900px;
-    margin: 20px auto;
-    overflow-y: auto;
-    max-height: 200px;
+    margin: 20px 0;
 }
+
 .gift-box {
-    border: 2px solid #B60000;
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    background: white;
-    width: 200px;
+    padding: 15px;
     cursor: pointer;
+    transition: transform 0.3s;
 }
+
+.gift-box:hover {
+    transform: scale(1.05);
+}
+
+.gift-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 .pix-text {
-    color: #B60000;
-    font-size: 1.2rem;
-}
-#map {
-    height: 400px;
-    width: 80%;
-    margin: auto;
-    border: 2px solid #B60000;
-    border-radius: 10px;
-}
-#show-more {
-    background: #B60000;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
 }

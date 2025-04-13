@@ -1,71 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casamento de Helena e Luana</title>
+    <title>Solstício de Inverno - Helena & Luana</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
-    <div class="title">Casamento das Noivas Helena e Luana</div>
+    <!-- Slide 1: Capa -->
+    <section id="slide1" class="slide">
+        <header>
+            <h1>Solstício de Inverno</h1>
+            <p class="names">Helena & Luana</p>
+            <p>20 de Junho, Curitiba - PR</p>
+        </header>
+    </section>
 
-    <div class="countdown-wrapper">
-        <h2>Contagem Regressiva</h2>
-        <div class="countdown-container" id="countdown">
-            <div class="countdown-box" id="days">00<br><small>Dias</small></div>
-            <div class="countdown-box" id="hours">00<br><small>Horas</small></div>
-            <div class="countdown-box" id="minutes">00<br><small>Minutos</small></div>
-            <div class="countdown-box" id="seconds">00<br><small>Segundos</small></div>
-        </div>
-    </div>
+    <!-- Slide 2: Texto Azul -->
+    <section id="slide2" class="slide blue-background">
+        <main>
+            <div class="content">
+                <p>No solstício de inverno, o sol atinge seu ponto mais distante no céu. A noite mais longa do ano marca um limiar entre escuridão e luz, entre fim e recomeço.</p>
+                <p>No dia 20 de junho, celebraremos nossa união e o retorno do sol. Após a noite mais escura, a luz cresce a cada dia — assim como nosso amor.</p>
+            </div>
+        </main>
+    </section>
 
-    <h2>Escolha um presente simbólico 🎁</h2>
-    <div class="gifts-container" id="gifts-container">
-        <div class="gift-box" onclick="showPix('pix1@casamento.com')">
-            <img src="https://via.placeholder.com/100" alt="Abraço">
-            <p>Um abraço nas noivas - R$10</p>
-        </div>
-        <div class="gift-box" onclick="showPix('pix2@casamento.com')">
-            <img src="https://via.placeholder.com/100" alt="Visto">
-            <p>Pague pelo nosso visto - R$500</p>
-        </div>
-        <div class="gift-box" onclick="showPix('pix3@casamento.com')">
-            <img src="https://via.placeholder.com/100" alt="Vinho">
-            <p>Uma garrafa de vinho - R$100</p>
-        </div>
-        <div class="gift-box" onclick="showPix('pix4@casamento.com')">
-            <img src="https://via.placeholder.com/100" alt="Viagem">
-            <p>Ajude na viagem dos sonhos - R$1000</p>
-        </div>
-        <div class="gift-box" onclick="showPix('pix5@casamento.com')">
-            <img src="https://via.placeholder.com/100" alt="Passagem">
-            <p>Passagem de avião - R$1500</p>
-        </div>
-        <div class="gift-box" onclick="showPix('pix6@casamento.com')">
-            <img src="https://via.placeholder.com/100" alt="Bratwurst">
-            <p>Compre uma bratwurst - R$30</p>
-        </div>
-        <div class="gift-box" onclick="showPix('pix7@casamento.com')">
-            <img src="https://via.placeholder.com/100" alt="Chucrute">
-            <p>Um chucrute - R$25</p>
-        </div>
-        <div class="gift-box" onclick="showPix('pix8@casamento.com')">
-            <img src="https://via.placeholder.com/100" alt="Prato Norueguês">
-            <p>Um prato norueguês mal temperado - R$50</p>
-        </div>
-        <div class="gift-box" onclick="showPix('pix8@casamento.com')">
-            <img src="https://via.placeholder.com/100" alt="Prato Norueguês">
-            <p>Um prato norueguês mal temperado - R$50</p>
-        </div>
-    </div>
-    <p id="pix-display" class="pix-text"></p>
+    <!-- Slide 3: Convite -->
+    <section id="slide3" class="slide">
+        <main>
+            <div class="content">
+                <p>Você está convidado para nosso casamento:</p>
+                <address>
+                    R. Dona Alice Tibiriçá, 286<br>
+                    Bigorrilho, Curitiba - PR, 80730-080<br>
+                    Restaurante Chez Margot<br>
+                    Dia 20 de Junho às 12h da manhã
+                </address>
+            </div>
+        </main>
+    </section>
 
-    <h2>Local da Cerimônia 📍</h2>
-    <div id="map"></div>
-    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/71/88/b7/restaurante.jpg" width="300" alt="Chez Margot">
-    <p>📍 Rua Buenos Aires, 50 - Batel, Curitiba - PR</p>
+    <!-- Slide 4: Ordem do Dia -->
+    <section id="slide4" class="slide">
+        <header>
+            <h2>Ordem do Dia</h2>
+        </header>
+        <main>
+            <ul class="schedule">
+                <li><strong>12h:</strong> Começo do brunch</li>
+                <li><strong>12h15:</strong> Entrada das noivas</li>
+                <li><strong>16h:</strong> Final do brunch</li>
+                <li><strong>18h:</strong> After Party</li>
+            </ul>
+        </main>
+    </section>
+
+    <!-- Slide 5: Presentes Simbólicos -->
+    <section id="slide5" class="slide">
+        <header>
+            <h2>Escolha um presente simbólico 🎁</h2>
+        </header>
+        <main>
+            <div class="gifts-container" id="gifts-container">
+                <div class="gift-box" onclick="showPix('pix1@casamento.com')">
+                    <img src="https://via.placeholder.com/100" alt="Abraço">
+                    <p>Um abraço nas noivas - R$10</p>
+                </div>
+                <div class="gift-box" onclick="showPix('pix2@casamento.com')">
+                    <img src="https://via.placeholder.com/100" alt="Visto">
+                    <p>Pague pelo nosso visto - R$500</p>
+                </div>
+                <div class="gift-box" onclick="showPix('pix3@casamento.com')">
+                    <img src="https://via.placeholder.com/100" alt="Vinho">
+                    <p>Uma garrafa de vinho - R$100</p>
+                </div>
+                <div class="gift-box" onclick="showPix('pix4@casamento.com')">
+                    <img src="https://via.placeholder.com/100" alt="Viagem">
+                    <p>Ajude na viagem dos sonhos - R$1000</p>
+                </div>
+                <div class="gift-box" onclick="showPix('pix5@casamento.com')">
+                    <img src="https://via.placeholder.com/100" alt="Passagem">
+                    <p>Passagem de avião - R$1500</p>
+                </div>
+                <div class="gift-box" onclick="showPix('pix6@casamento.com')">
+                    <img src="https://via.placeholder.com/100" alt="Bratwurst">
+                    <p>Compre uma bratwurst - R$30</p>
+                </div>
+                <div class="gift-box" onclick="showPix('pix7@casamento.com')">
+                    <img src="https://via.placeholder.com/100" alt="Chucrute">
+                    <p>Um chucrute - R$25</p>
+                </div>
+                <div class="gift-box" onclick="showPix('pix8@casamento.com')">
+                    <img src="https://via.placeholder.com/100" alt="Prato Norueguês">
+                    <p>Um prato norueguês mal temperado - R$50</p>
+                </div>
+            </div>
+            <p id="pix-display" class="pix-text"></p>
+        </main>
+    </section>
+
+    <!-- Slide 6: Solstício de Inverno -->
+    <section id="slide6" class="slide">
+        <header>
+            <h1>Solstício de Inverno</h1>
+        </header>
+    </section>
+
+    <!-- Slide 7: Solstício de Inverno -->
+    <section id="slide7" class="slide">
+        <header>
+            <h1>Solstício de Inverno</h1>
+        </header>
+    </section>
 
     <script src="script.js"></script>
 </body>
