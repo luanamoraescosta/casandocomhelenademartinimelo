@@ -18,6 +18,7 @@ body, html {
 }
 
 .slide {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,9 +43,113 @@ body, html {
     margin: 0 auto;
 }
 
-address {
-    font-style: normal;
-    margin-top: 20px;
+/* Imagens nos Cantos */
+.corner-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.corner-image {
+    position: absolute;
+    width: 250px; /* Aumentado o tamanho das imagens */
+    height: 250px; /* Aumentado o tamanho das imagens */
+    object-fit: contain; /* Garante que a imagem preencha o espaço sem distorções */
+}
+
+.top-left {
+    top: 10px;
+    left: 10px;
+    transform: none; /* Sem inversão */
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+    transform: scaleX(-1); /* Inverte horizontalmente */
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+    transform: scaleY(-1); /* Inverte verticalmente */
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+    transform: scale(-1, -1); /* Inverte horizontalmente e verticalmente */
+}
+
+/* Imagens Principais */
+.cover-image, .decorative-image, .location-image {
+    margin: 20px 0;
+}
+
+.cover-image {
+    position: relative;
+    width: 100%; /* Ajusta a largura para preencher o container */
+    height: auto; /* Mantém a proporção */
+    z-index: 0; /* Garante que a imagem fique atrás do retângulo */
+}
+
+.decorative-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.location-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.sol_header {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+/* Retângulo Centralizado Sobre a Cover Image */
+/* Retângulo com texto centralizado sobre a imagem */
+.header-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Texto dentro do retângulo */
+.header-background h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.header-background .names {
+    font-size: 1.5em;
+    color: #555;
+}
+
+/* Texto do Header */
+header p, header h1 {
+    position: relative;
+    z-index: 2; /* Garante que o texto fique em cima do retângulo */
+    margin: 10px 0; /* Espaçamento entre os elementos de texto */
 }
 
 /* Slide 2: Fundo Azul */
@@ -58,15 +163,61 @@ address {
     margin-bottom: 20px;
 }
 
-/* Ordem do Dia */
-.schedule {
-    list-style-type: none;
-    padding: 0;
+/* Timeline Line */
+.timeline-line {
+    width: 80%;
+    height: 2px;
+    background-color: #333;
+    margin: 20px auto;
 }
 
-.schedule li {
+/* Ordem do Dia com Ticks */
+.schedule.horizontal {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    margin-top: 20px;
+}
+
+.schedule.horizontal li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1.1em;
-    margin: 10px 0;
+    text-align: center;
+}
+
+.tick-container {
+    position: relative;
+    margin-bottom: -10px; /* Ajusta a posição para puxar os ícones mais próximos da linha */
+}
+
+.tick-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1; /* Garante que os ícones fiquem acima da linha */
+}
+
+/* Posicionamento dos Horários */
+.schedule.horizontal li strong {
+    margin-top: 10px; /* Espaçamento entre a linha e os horários */
+}
+
+/* Endereço com Layout Lado a Lado */
+.address-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.address-text {
+    text-align: left;
 }
 
 /* Presentes Simbólicos */
