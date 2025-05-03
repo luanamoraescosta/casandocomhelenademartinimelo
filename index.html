@@ -5,30 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solstício de Inverno - Helena & Luana</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/fargo-personal-use" rel="stylesheet">
 </head>
 <body>
+    <!-- Navegação Fixa -->
+    <nav class="nav">
+        <ul>
+            <li><a href="#slide1">Home</a></li>
+            <li><a href="#slide2">Sobre</a></li>
+            <li><a href="#slide3">Convite</a></li>
+            <li><a href="#slide4">Ordem do Dia</a></li>
+            <li><a href="#slide5">Presentes</a></li>
+        </ul>
+    </nav>
+
     <!-- Slide 1: Capa -->
     <section id="slide1" class="slide">
-        <div><p class="data">20 de Junho</p></div>
         <div class="corner-images">
             <img src="slide1.png" alt="Canto Superior Esquerdo" class="corner-image top-left">
             <img src="slide1.png" alt="Canto Superior Direito" class="corner-image top-right">
             <img src="slide1.png" alt="Canto Inferior Esquerdo" class="corner-image bottom-left">
             <img src="slide1.png" alt="Canto Inferior Direito" class="corner-image bottom-right">
         </div>
-        <header>
-            <img src="solslide1.png" alt="Imagem da Capa" class="cover-image">
-        
+        <div>
+            <img src="ss4.png" alt="Imagem da Capa" class="cover-image">
             <div class="header-background">
                 <h1>Solstício de Inverno</h1>
-                <p class="names">Helena & Luana</p>  
+                <p class="names">Helena & Luana</p>
             </div>
-        </header>
-        
-        <div><p class="endereco">Curitiba - PR</p></div>
+            <p class="data">20 de Junho</p>
+            <p class="endereco">Curitiba - PR</p>
+        </div>
     </section>
 
-    <!-- Slide 2: Texto Azul -->
     <section id="slide2" class="slide blue-background">
         <div class="corner-images">
             <img src="slide2.png" alt="Canto Superior Esquerdo" class="corner-image top-left">
@@ -38,44 +50,53 @@
         </div>
         <main>
             <div class="content">
-                <p>No solstício de inverno, o sol atinge seu ponto mais distante no céu. A noite mais longa do ano marca um limiar entre escuridão e luz, entre fim e recomeço.</p>
-                <img src="solslide2.png" alt="Imagem Decorativa" class="decorative-image">
-                <p>No dia <strong>20 de junho</strong>, celebraremos nossa união e o retorno do sol. Após a noite mais escura, a luz cresce a cada dia — assim como nosso amor.</p>
+                <p class="amarelo">No solstício de inverno, o sol atinge seu ponto mais distante no céu. A noite mais longa do ano marca um liminar entre escuridão e luz, entre fim e recomeço.</p>
+                <div class="image-wrapper">
+                    <img src="solslide2.png" alt="Imagem Decorativa" class="decorative-image">
+                </div>
+                <p class="amarelo">No dia <strong>20 de junho</strong>, celebraremos nossa união e o retorno do sol. Após a noite mais escura, a luz cresce a cada dia — assim como nosso amor.</p>
             </div>
         </main>
     </section>
-
-    <!-- Slide 3: Convite -->
-    <section id="slide3" class="slide">
-        <div class="corner-images">
-            <img src="slide3.png" alt="Canto Superior Esquerdo" class="corner-image top-left">
-            <img src="slide3.png" alt="Canto Superior Direito" class="corner-image top-right">
-            <img src="slide3.png" alt="Canto Inferior Esquerdo" class="corner-image bottom-left">
-            <img src="slide3.png" alt="Canto Inferior Direito" class="corner-image bottom-right">
-        </div>
-        <main>
-            <div class="content">
-                <header>
-                    <img src="solslide3.png" alt="Sol header" class="sol_header">
-                </header>
-            <div>Você está convidado para nosso casamento</div>
-                <div class="address-container">
+<!-- Slide 3: Convite -->
+<section id="slide3" class="slide">
+    <div class="corner-images">
+        <img src="slide3.png" alt="Canto Superior Esquerdo" class="corner-image top-left">
+        <img src="slide3.png" alt="Canto Superior Direito" class="corner-image top-right">
+        <img src="slide3.png" alt="Canto Inferior Esquerdo" class="corner-image bottom-left">
+        <img src="slide3.png" alt="Canto Inferior Direito" class="corner-image bottom-right">
+    </div>
+    <main>
+        <header>
+            <img src="solslide3.png" alt="Sol header" class="sol_header">
+            <h2>Você está convidado para nosso casamento</h2>
+        </header>
+        <div class="content">
+            <div class="invite-container">
+                <div class="image-side">
                     <img src="restaurante.png" alt="Imagem do Local" class="location-image">
-                    <div class="address-text">
-                        <p>Te aguardamos para nossa cerimônia no Restaurante</p>
-                        <p class="Chez">Chez Margot</p>
-                        <day>Dia 20 de Junho</day>
-                        <time>às 12h da manhã</time>
-                        <address>
-                            R. Dona Alice Tibiriçá, 286<br>
-                            Bigorrilho, Curitiba - PR, 80730-080<br>
-                        </address>
+                </div>
+                <div class="text-side">
+                    <div class="address-container">
+                        <div class="address-text">
+                            <p> Te aguardamos para nossa cerimônia no Restaurante</p>
+                            <p class="Chez">Chez Margot</p>
+                            <div class="datetime">
+                                <day>📅 Dia 20 de Junho</day>
+                                <time>🕒 às 12h da manhã</time>
+                            </div>
+                            <address>
+                                🏠 R. Dona Alice Tibiriçá, 286<br>
+                                Bigorrilho, Curitiba - PR, 80730-080<br>
+                            </address>
+                        </div>
                     </div>
                 </div>
             </div>
-        </main>
-    </section>
-    <!-- Slide 4: Ordem do Dia -->
+        </div>
+    </main>
+</section>
+   <!-- Slide 4: Ordem do Dia -->
 <section id="slide4" class="slide">
     <div class="corner-images">
         <img src="slide4.png" alt="Canto Superior Esquerdo" class="corner-image top-left">
@@ -83,43 +104,50 @@
         <img src="slide4.png" alt="Canto Inferior Esquerdo" class="corner-image bottom-left">
         <img src="slide4.png" alt="Canto Inferior Direito" class="corner-image bottom-right">
     </div>
+    
     <header>
-        <h2>Ordem do Dia</h2>
+        <h2 class="ordemDoDia">Ordem do Dia</h2>
     </header>
     <main>
-        <!-- Ordem do Dia com Ticks -->
-        <ul class="schedule horizontal">
-            <li>
-                <div class="tick-container">
-                    <img src="brunch.png" alt="Ícone Brunch" class="tick-icon">
-                </div>
-                <strong>12h:</strong> Começo do brunch
-            </li>
-            <li>
-                <div class="tick-container">
-                    <img src="entrada.png" alt="Ícone Entrada" class="tick-icon">
-                </div>
-                <strong>12h15:</strong> Entrada das noivas
-            </li>
-            <li>
-                <div class="tick-container">
-                    <img src="finalbolo.png" alt="Ícone Final Brunch" class="tick-icon">
-                </div>
-                <strong>16h:</strong> Final do brunch
-            </li>
-            <li>
-                <div class="tick-container">
-                    <img src="after.png" alt="Ícone After Party" class="tick-icon">
-                </div>
-                <strong>18h:</strong> After Party
-            </li>
-        </ul>
-
-        <!-- Linha Horizontal -->
-        <div class="timeline-line"></div>
-
-        <img src="https://via.placeholder.com/400x200" alt="Imagem Decorativa" class="decorative-image">
+        <div class="timeline-container">
+            <ul class="schedule horizontal">
+                <li>
+                    <strong>12h:</strong>
+                    <div class="tick-container">
+                        <img src="brunch.png" alt="Ícone Brunch" class="tick-icon">
+                    </div>
+                    <span>Começo do brunch</span>
+                    <div class="time-marker"></div>
+                </li>
+                <li>
+                    <strong>12h15:</strong>
+                    <div class="tick-container">
+                        <img src="entrada.png" alt="Ícone Entrada" class="tick-icon">
+                    </div>
+                    <span>Entrada das noivas</span>
+                    <div class="time-marker"></div>
+                </li>
+                <li>
+                    <strong>16h:</strong>
+                    <div class="tick-container">
+                        <img src="finalbolo.png" alt="Ícone Final Brunch" class="tick-icon">
+                    </div>
+                    <span>Final do brunch</span>
+                    <div class="time-marker"></div>
+                </li>
+                <li>
+                    <strong>18h:</strong>
+                    <div class="tick-container">
+                        <img src="after.png" alt="Ícone After Party" class="tick-icon">
+                    </div>
+                    <span>After Party</span>
+                    <div class="time-marker"></div>
+                </li>
+            </ul>
+            <div class="timeline-line"></div>
+        </div>
     </main>
+   
 </section>
 
     <!-- Slide 5: Presentes Simbólicos -->
@@ -131,10 +159,10 @@
             <img src="slide1.png" alt="Canto Inferior Direito" class="corner-image bottom-right">
         </div>
         <header>
-            <h2>Escolha um presente simbólico 🎁</h2>
+            <h2>Escolha um presente simbólico</h2>
         </header>
         <main>
-            <div class="gifts-container" id="gifts-container">
+            <div class="gifts-container" id="gifts-container" style="grid-template-columns: repeat(2, 1fr);">
                 <div class="gift-box" onclick="showPix('pix1@casamento.com')">
                     <img src="https://via.placeholder.com/100" alt="Abraço">
                     <p>Um abraço nas noivas - R$10</p>
@@ -171,6 +199,7 @@
             <p id="pix-display" class="pix-text"></p>
         </main>
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>
