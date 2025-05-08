@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/fargo-personal-use" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
 <body>
     <!-- Navegação Fixa -->
@@ -58,44 +60,47 @@
             </div>
         </main>
     </section>
-<!-- Slide 3: Convite -->
-<section id="slide3" class="slide">
-    <div class="corner-images">
-        <img src="slide3.png" alt="Canto Superior Esquerdo" class="corner-image top-left">
-        <img src="slide3.png" alt="Canto Superior Direito" class="corner-image top-right">
-        <img src="slide3.png" alt="Canto Inferior Esquerdo" class="corner-image bottom-left">
-        <img src="slide3.png" alt="Canto Inferior Direito" class="corner-image bottom-right">
-    </div>
-    <main>
-        <header>
-            <img src="solslide3.png" alt="Sol header" class="sol_header">
-            <h2>Você está convidado para nosso casamento</h2>
-        </header>
-        <div class="content">
-            <div class="invite-container">
-                <div class="image-side">
-                    <img src="restaurante.png" alt="Imagem do Local" class="location-image">
-                </div>
-                <div class="text-side">
-                    <div class="address-container">
-                        <div class="address-text">
-                            <p> Te aguardamos para nossa cerimônia no Restaurante</p>
-                            <p class="Chez">Chez Margot</p>
-                            <div class="datetime">
-                                <day>📅 Dia 20 de Junho</day>
-                                <time>🕒 às 12h da manhã</time>
+
+    <section id="slide3" class="slide">
+        <div class="corner-images">
+            <img src="slide3.png" alt="Canto Superior Esquerdo" class="corner-image top-left">
+            <img src="slide3.png" alt="Canto Superior Direito" class="corner-image top-right">
+            <img src="slide3.png" alt="Canto Inferior Esquerdo" class="corner-image bottom-left">
+            <img src="slide3.png" alt="Canto Inferior Direito" class="corner-image bottom-right">
+        </div>
+        <main>
+            <header>
+                <img src="solslide3.png" alt="Sol header" class="sol_header">
+                <h2>Você está convidado para nosso casamento</h2>
+            </header>
+            <div class="content">
+                <div class="invite-container">
+                    <div class="image-side">
+                        <img src="restaurante.png" alt="Imagem do Local" class="location-image">
+                    </div>
+                    <div class="text-side">
+                        <div class="address-container">
+                            <div class="address-text">
+                                <p> Te aguardamos para nossa cerimônia no Restaurante</p>
+                                <p class="Chez">Chez Margot</p>
+                                <div class="datetime">
+                                    <day>📅 Dia 20 de Junho</day>
+                                    <time>🕒 às 12h da manhã</time>
+                                    <day>Traje esporte fino</day>
+                                </div>
+                                <address>
+                                    🏠 R. Dona Alice Tibiriçá, 286<br>
+                                    Bigorrilho, Curitiba - PR, 80730-080<br>
+                                </address>
                             </div>
-                            <address>
-                                🏠 R. Dona Alice Tibiriçá, 286<br>
-                                Bigorrilho, Curitiba - PR, 80730-080<br>
-                            </address>
                         </div>
                     </div>
                 </div>
+                <div id="map" class="map-container"></div>
             </div>
-        </div>
-    </main>
-</section>
+        </main>
+    </section>
+
    <!-- Slide 4: Ordem do Dia -->
 <section id="slide4" class="slide">
     <div class="corner-images">
@@ -105,49 +110,41 @@
         <img src="slide4.png" alt="Canto Inferior Direito" class="corner-image bottom-right">
     </div>
     
-    <header>
-        <h2 class="ordemDoDia">Ordem do Dia</h2>
-    </header>
-    <main>
-        <div class="timeline-container">
-            <ul class="schedule horizontal">
-                <li>
-                    <strong>12h:</strong>
-                    <div class="tick-container">
-                        <img src="brunch.png" alt="Ícone Brunch" class="tick-icon">
-                    </div>
-                    <span>Começo do brunch</span>
-                    <div class="time-marker"></div>
-                </li>
-                <li>
-                    <strong>12h15:</strong>
-                    <div class="tick-container">
-                        <img src="entrada.png" alt="Ícone Entrada" class="tick-icon">
-                    </div>
-                    <span>Entrada das noivas</span>
-                    <div class="time-marker"></div>
-                </li>
-                <li>
-                    <strong>16h:</strong>
-                    <div class="tick-container">
-                        <img src="finalbolo.png" alt="Ícone Final Brunch" class="tick-icon">
-                    </div>
-                    <span>Final do brunch</span>
-                    <div class="time-marker"></div>
-                </li>
-                <li>
-                    <strong>18h:</strong>
-                    <div class="tick-container">
-                        <img src="after.png" alt="Ícone After Party" class="tick-icon">
-                    </div>
-                    <span>After Party</span>
-                    <div class="time-marker"></div>
-                </li>
-            </ul>
-            <div class="timeline-line"></div>
+    <h2 class="ordemDoDia">Ordem do Dia</h2>
+    
+    <div class="timeline-grid">
+        <div class="timeline-item">
+            <img src="brunch.png" alt="Ícone Brunch" class="timeline-icon">
+            <div class="timeline-content">
+                <strong>12h</strong>
+                <span>Começo do brunch</span>
+            </div>
         </div>
-    </main>
-   
+        
+        <div class="timeline-item">
+            <img src="entrada.png" alt="Ícone Entrada" class="timeline-icon">
+            <div class="timeline-content">
+                <strong>12h15</strong>
+                <span>Entrada das noivas</span>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <img src="finalbolo.png" alt="Ícone Final Brunch" class="timeline-icon">
+            <div class="timeline-content">
+                <strong>16h</strong>
+                <span>Final do brunch</span>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <img src="after.png" alt="Ícone After Party" class="timeline-icon">
+            <div class="timeline-content">
+                <strong>18h</strong>
+                <span>After Party</span>
+            </div>
+        </div>
+    </div>
 </section>
 
     <!-- Slide 5: Presentes Simbólicos -->
@@ -200,6 +197,16 @@
         </main>
     </section>
 
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Inicialização do mapa
+        var map = L.map('map').setView([-25.4284, -49.2633], 17); // Coordenadas do restaurante
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+        var marker = L.marker([-25.4284, -49.2633]).addTo(map);
+        marker.bindPopup('<strong>Chez Margot</strong><br>R. Dona Alice Tibiriçá, 286<br>Bigorrilho, Curitiba - PR').openPopup();
+    </script>
 </body>
 </html>
