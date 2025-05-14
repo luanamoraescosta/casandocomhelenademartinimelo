@@ -474,16 +474,6 @@ address {
     margin: 0;
     color: #333;
 }
-/* Ajustes para desktop */
-@media (min-width: 768px) {
-    .gift-box {
-        height: 300px;
-    }
-    
-    .gift-box img {
-        margin: 5% 0;
-    }
-}
 
 /* Efeitos de Transição */
 section {
@@ -659,29 +649,25 @@ section {
     }
     
      .gift-box {
-        height: 230px;
+        height: 220px;
         padding: 10px;
+
     }
     
     .gift-box img {
         width: 100%;
-        height: 80%;
+        height: 90%;
         object-fit: cover;
         margin-bottom: -20px;
         display: block;
     }
     .gift-title {
-        font-size: 0.9em;
+        font-size: 0.6em;
         margin-top: 10px;
         text-align: center;
     }
     
-    .gift-box p {
-        font-size: 0.8em;
-        text-align: center;
-        margin-top: 5px;
-    }
-    
+
     .location-image {
         width: 100%;
         margin-left: 0;
@@ -823,32 +809,6 @@ section {
         margin: 20px 0;
     }
 
-    #slide5 h2 {
-        margin: 40px 15px;
-        font-size: 1.2em;
-        white-space: normal;
-        word-wrap: break-word;
-        max-width: 300px;
-        margin: 0 auto;
-        margin-bottom: 5px;
-    }    
-    
-    .gifts-container {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        max-width: 350px;
-    }
-    
-    .gift-box {
-        height: 200px;
-    }
-    
-    .gift-box img {
-        width: 80%;
-        height: auto;
-        aspect-ratio: 1/1;
-        margin: 20% 0;
-    }
 
     /* Ajustes gerais para espaçamento */
     .slide {
