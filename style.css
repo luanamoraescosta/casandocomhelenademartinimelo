@@ -390,7 +390,7 @@ address {
 
 /* Presentes Simbólicos */
 #slide5 main {
-    padding: 20px;
+    padding: 15px;
     margin: 20px auto;
     max-width: 800px;
 }
@@ -622,7 +622,7 @@ section {
     .map-container {
         margin: 10px 0;
         height: 200px;
-        margin-bottom: 140px; /* Espaço adicional para evitar encostar nas corner images */
+        margin-bottom: 80px; /* Espaço adicional para evitar encostar nas corner images */
     }
     
     .address-text {
@@ -671,6 +671,7 @@ section {
     .location-image {
         width: 100%;
         margin-left: 0;
+        margin-bottom: -50px;
     }
 }
 
@@ -682,7 +683,7 @@ section {
 
     #slide5 h2 {
         margin: 40px 15px;
-        font-size: 1.4em;
+        font-size: 1.2em;
         white-space: normal;
         word-wrap: break-word;
         max-width: 300px;
