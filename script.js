@@ -13,9 +13,9 @@ function showPix(pixKey) {
 }
 
 // Inicialização do mapa
-var map = L.map('map').setView([-25.4284, -49.2633], 17); // Coordenadas do restaurante
+var map = L.map('map').setView([-25.437172436541392, -49.3003412915796], 15); // Coordenadas do restaurante
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-var marker = L.marker([-25.4284, -49.2633]).addTo(map);
+var marker = L.marker([-25.437172436541392, -49.3003412915796]).addTo(map);
 marker.bindPopup('<strong>Chez Margot</strong><br>R. Dona Alice Tibiriçá, 286<br>Bigorrilho, Curitiba - PR').openPopup();
