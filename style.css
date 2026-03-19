@@ -705,7 +705,24 @@ section {
         padding-bottom: 10px;
     }
 }
+@media (min-width: 1280px) {
+    #slide2,
+    #slide4 {
+        justify-content: center;
+    }
 
+    #slide2 .content {
+        margin-top: 0;
+    }
+
+    .ordemDoDia {
+        margin-top: 0;
+    }
+
+    .timeline-grid {
+        margin-top: 0;
+    }
+}
 @media (max-width: 480px) {
     /* Ajustes para celulares pequenos */
     
