@@ -1,6 +1,6 @@
 # Casando com Helena de Martini Melo
 
-Site interativo criado para apresentar imagens e slides do casamento de Helena de Martini Melo.
+Site interativo criado para apresentar imagens e slides do meu casamento com Helena de Martini Melo.
 
 ### Sobre o Projeto
 
